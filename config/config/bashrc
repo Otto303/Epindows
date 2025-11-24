@@ -1,0 +1,9 @@
+source $(\pwd)/bash_dep/ps1.sh
+
+export MSDOS="enable"
+
+source $(\pwd)/bash_dep/msdos.sh
+
+alias epindows='echo Hello World!' #TODO
+
+\echo -e 'Microsoft(R) Windows DOS\n(C)Copyright Microsoft Corp 1990-2001.'
