@@ -6,6 +6,8 @@ bad_cmd='\echo Bad command or file name #'
 
 alias msconfig='epindows'
 
+alias tree='tree -n'
+
 alias dir='\ls -la'
 alias ls=$bad_cmd
 
