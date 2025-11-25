@@ -28,6 +28,7 @@ alias mv=$bad_cmd
 
 alias notepad='gvim'
 alias vim=$bad_cmd
+alias gvim=$bad_cmd
 
 alias cmd='\alacritty'
 alias powershell='\alacritty'
