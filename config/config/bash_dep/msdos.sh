@@ -8,6 +8,8 @@ alias msconfig='epindows'
 
 alias tree='tree -n'
 
+alias bash=$bad_cmd
+
 alias dir='\ls -la'
 alias ls=$bad_cmd
 
@@ -24,7 +26,7 @@ alias cp=$bad_cmd
 alias rename='\mv'
 alias mv=$bad_cmd
 
-alias notepad='\alacritty -e vim'
+alias notepad='\alacritty -e gvim'
 alias vim=$bad_cmd
 
 alias cmd='\alacritty'
