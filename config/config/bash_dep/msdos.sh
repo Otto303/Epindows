@@ -26,7 +26,7 @@ alias cp=$bad_cmd
 alias rename='\mv'
 alias mv=$bad_cmd
 
-alias notepad='\alacritty -e gvim'
+alias notepad='gvim'
 alias vim=$bad_cmd
 
 alias cmd='\alacritty'
