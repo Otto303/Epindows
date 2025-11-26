@@ -4,6 +4,8 @@
 
 bad_cmd='\echo Bad command or file name #'
 
+alias fetch='fastfetch -l windows'
+
 alias msconfig='epindows'
 
 alias tree='tree -n'
@@ -26,9 +28,10 @@ alias cp=$bad_cmd
 alias rename='\mv'
 alias mv=$bad_cmd
 
-alias notepad='gvim'
+alias notepad='\gvim'
 alias vim=$bad_cmd
 alias gvim=$bad_cmd
+alias nano=$bad_cmd
 
 alias cmd='\alacritty'
 alias powershell='\alacritty'
