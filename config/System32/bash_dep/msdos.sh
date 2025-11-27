@@ -1,10 +1,7 @@
 #!/bin/sh
 
-[ "$MSOD" = "disable" ] && exit
 
 bad_cmd='\echo Bad command or file name #'
-
-alias fetch='fastfetch -l windows'
 
 alias msconfig='epindows'
 

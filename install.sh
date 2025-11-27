@@ -1,8 +1,13 @@
 #!/bin/sh
 
-nix.env -iA nixpkgs.pcmanfm #desktop
-nix.env -iA nixpkgs.tint2 #taskbar
-nix.env -iA nixpkgs.rofi #start menu
-nix.env -iA nixpkgs.fastfetch #beceause it looks cool
+echo Installing packages...
+./pkgs.sh > /dev/null
 
-ln -s ~/afs/Desktop ~/Desktop #make sure Desktop is saved between sessions
+echo Openning desktop...
+pcmanfm --desktop & disown
+i3-msg focus right floating disable border none
+echo Activating GUI...
+tint2 -c ~/afs/win_test/taskbar_xp & disown
+rofi -show drun -config ~/afs/win_test/config.rasi & disown
+
+exit

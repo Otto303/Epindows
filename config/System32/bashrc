@@ -2,10 +2,13 @@ bash_dep=$(\pwd)/bash_dep
 
 source $bash_dep/ps1.sh
 
-export MSDOS="enable"
-
-source $bash_dep/msdos.sh
+export MSDOS="disable"
+if [ $MSDOS = "enable" ]; then
+    source $bash_dep/msdos.sh # cmd alias for bash
+fi
 
 alias epindows=$bash_dep/epindows.sh #TODO
+
+alias fetch='fastfetch -l windows'
 
 \echo -e 'Microsoft(R) Windows DOS\n(C)Copyright Microsoft Corp 1990-2001.'
