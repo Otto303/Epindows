@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=wineconsole
+Icon=/home/otto.debrie/afs/win_test/desktop_icons/cmd.png
+Categories=System;TerminalEmulator;
+
+Name=Cmd
+GenericName=Terminal

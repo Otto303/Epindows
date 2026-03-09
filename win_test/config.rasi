@@ -1,0 +1,13 @@
+configuration {
+    font: 							"Iosevka Nerd Font 12";
+    location: 						1;
+    fixed-num-lines: 				true;
+    show-icons: 					false;
+    sidebar-mode: 					true;
+    scroll-method: 					0;
+    click-to-exit: 					true;
+    combi-hide-mode-prefix: 		false;
+    modi: "drun";
+}
+
+@theme "~/afs/win_test/win_xp.rasi"
