@@ -6,6 +6,7 @@ echo Installing packages...
 ./pkgs.sh > /dev/null
 
 echo Openning desktop...
+i3-msg for_window [ title="pcmanfm" ] border none
 pcmanfm --desktop & disown
 i3-msg floating disable; sleep 1
 i3-msg focus right floating disable border none
