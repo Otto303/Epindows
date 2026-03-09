@@ -196,3 +196,4 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 for_window [ title="pcmanfm" ] border none
+for_window [ class=".*" ] floating enable
