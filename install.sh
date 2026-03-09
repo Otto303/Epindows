@@ -24,6 +24,5 @@ i3-msg floating enable
 
 echo Activating GUI...
 (tint2 -c $files/win_test/taskbar_xp & disown) > /dev/null
-(rofi -show drun -config $files/win_test/config.rasi & disown) > /dev/null
 
 echo Epindows Successfully installed!
