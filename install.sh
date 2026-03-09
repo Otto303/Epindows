@@ -5,7 +5,11 @@ sys32=$files/config/System32
 
 echo Installing configs...
 git clone https://github.com/Otto303/Epindows.git $files -b dev &>/dev/null
-i3 -c "$sys32/i3/config" --replace
+
+mv ~/.config/i3/config /tmp/config.bak
+cp $sys32/config/System32 ~/.config/i3/config
+i3-msg restart; sleep 1
+mv /tmp/config.bak ~/.config/i3/config
 
 i3-msg floating enable
 
