@@ -1,19 +1,25 @@
 #!/bin/sh
 
+files=/tmp/Epindows
+sys32=$files/config/System32
+
+echo Installing configs...
+git clone https://github.com/Otto303/Epindows.git $files &>/dev/null
+i3 -c "$sys32/i3/config"
+
 i3-msg floating enable
 
 echo Installing packages...
-./pkgs.sh > /dev/null
+$files/pkgs.sh > /dev/null
 
 echo Openning desktop...
-i3-msg for_window [ title="pcmanfm" ] border none
 pcmanfm --desktop & disown
 i3-msg floating disable; sleep 1
 i3-msg focus right floating disable border none
 i3-msg floating enable
 
 echo Activating GUI...
-(tint2 -c ~/afs/win_test/taskbar_xp & disown) > /dev/null
-(rofi -show drun -config ~/afs/win_test/config.rasi & disown) > /dev/null
+(tint2 -c $files/win_test/taskbar_xp & disown) > /dev/null
+(rofi -show drun -config $files/win_test/config.rasi & disown) > /dev/null
 
 echo Epindows Successfully installed!
