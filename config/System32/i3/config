@@ -197,5 +197,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bar {
+    hidden_state hide
+}
+
 for_window [ title="pcmanfm" ] border none
 for_window [ class=".*" ] floating enable
